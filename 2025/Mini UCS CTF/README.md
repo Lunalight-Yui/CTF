@@ -1,4 +1,4 @@
-Mini Ucs CTF is a CTF that make selection member to join this ukm. There are many experts (or in indonesia we call it "SEPUH") teach us from basic till like them.
+Mini Ucs CTF is an event using CTF to select member join this ukm. There are many experts (or in indonesia we call it "SEPUH") teach us from basic till like them.
 
 How to be expert? This is the answer
 
