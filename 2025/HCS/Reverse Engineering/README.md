@@ -1,1 +1,2 @@
-Rev but only 2 solve 🥀
+Rev but only 2 solve 🥀 by myself
+
