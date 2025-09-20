@@ -14,6 +14,7 @@ I ask AI to solve it (but i want to learn rn). Here the result (ik i'm lazy, but
 After getting base64 encode. i try decode using cyberchef and here the result:
 
 <img width="1540" height="874" alt="image" src="https://github.com/user-attachments/assets/d5ea4019-1ccc-44b0-9b8a-9712d26a3e5b" />
+
 ```
 HCS{kalian_langsung_filter_flagnya_atau_perhatiin_apa_attackernya_lakukan_hehe}
 ```
