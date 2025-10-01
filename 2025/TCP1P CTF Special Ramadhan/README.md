@@ -6,7 +6,9 @@ My team member:
 
   List challenge i solve (click the challenge and you will redirect to solver):
 
-  | Challenge | Category | Type vulnerability | difficulty |
+  | Challenge | Category | Difficulty | Link |
   | :------- | :------: | :-------: | :-------: |
-  | a | Web Exploit | Row 1 Col 3 | <difficulty> |
-  | baby pyjail | MISC | Row 2 Col 3 | <difficulty> |
+  | Baby Pyjail | MISC | Baby | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/TCP1P%20CTF%20Special%20Ramadhan/MISC/Baby%20Pyjail) |
+  | Ingfokan Lokasi Takjil | Web Exploit | Easy | [Click me!]() |
+  | TobTobiTobTobTobiTobTobTobiTobTobTobali | Web Exploit | Easy | [Click me!]() |
+  | Bandit | OSINT | Easy | [Click me!]() |
