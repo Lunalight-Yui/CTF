@@ -11,4 +11,4 @@ My team member:
   | Baby Pyjail | MISC | Baby | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/TCP1P%20CTF%20Special%20Ramadhan/MISC/Baby%20Pyjail) |
   | Ingfokan Lokasi Takjil | Web Exploit | Easy | [Click me!]() |
   | TobTobiTobTobTobiTobTobTobiTobTobTobali | Web Exploit | Easy | [Click me!]() |
-  | Bandit | OSINT | Easy | [Click me!]() |
+  | Bandit | OSINT | Easy | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/TCP1P%20CTF%20Special%20Ramadhan/OSINT/Bandit) |
