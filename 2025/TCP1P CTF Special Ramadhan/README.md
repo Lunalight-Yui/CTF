@@ -1,7 +1,7 @@
 All solving CTF on TCP1P. My team: Yauda ga suah. 
 
 My team member:
-- [Raven](https://github.com/Zee031?tab=repositories)
+- [RɅV☰N](https://github.com/Zee031?tab=repositories)
 - [Grb](https://github.com/GetRektBoy724)
 
   List challenge i solve (click the challenge and you will redirect to solver):
