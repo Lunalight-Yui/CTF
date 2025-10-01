@@ -6,7 +6,7 @@
 Author: Jieyab89
 
 # 『Format Flag』
-> TCP1P{Yogyakarta, Indonesia. June 2010}
+> Example: TCP1P{Yogyakarta, Indonesia. June 2010}
 
 > [Zip file image](https://tcp.1pc.tf/assets/8dda7b3f21805f8fff56b65257795271de96e9f334f807d7cdd3676cfaab0d1d/bandit_suspect.zip)
 
