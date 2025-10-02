@@ -12,3 +12,4 @@ My team member:
   | Ingfokan Lokasi Takjil | Web Exploit | Easy | [Click me!]() |
   | TobTobiTobTobTobiTobTobTobiTobTobTobali | Web Exploit | Easy | [Click me!]() |
   | Bandit | OSINT | Easy | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/TCP1P%20CTF%20Special%20Ramadhan/OSINT/Bandit) |
+  | Lost Younger Sister | OSINT | Medium | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/TCP1P%20CTF%20Special%20Ramadhan/OSINT/Lost%20Younger%20Sister) |
