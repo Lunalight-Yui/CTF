@@ -1,6 +1,8 @@
 # 『ICMP』
 > aku ngirim rahasia ke google
 
+<img width="736" height="610" alt="image" src="https://github.com/user-attachments/assets/ee09e73c-d07c-4918-bda1-c4e74b20160f" />
+
 Author: hyall
 
 # 『The challenge』
