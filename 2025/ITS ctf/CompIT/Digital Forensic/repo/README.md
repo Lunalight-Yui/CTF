@@ -1,6 +1,8 @@
 # 『repo』
 > mana ....
 
+<img width="791" height="585" alt="image" src="https://github.com/user-attachments/assets/33998a3a-2082-4cd3-ae88-a5e52e2e1cbb" />
+
 Author: hyall
 
 # 『The challenge』
