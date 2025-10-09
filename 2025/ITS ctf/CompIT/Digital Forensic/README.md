@@ -10,4 +10,4 @@ So this challenge is almost completely by my friend whose nickname in scoreboard
   | ngga tau | easy | Lylera_ | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/ITS%20ctf/CompIT/Digital%20Forensic/ngga%20tau) | Solve |
   | flag PDF | easy | Lylera_ | [Click me!](https://github.com/Lunalight-Yui/CTF/tree/main/2025/ITS%20ctf/CompIT/Digital%20Forensic/flag%20PDF) | Upsolve |
 
-  I appreciate with my friends who can solve this digital forensic absolutely cool. I just solve one out of 6 xD
+  I appreciate with my friends who can solve this digital forensic absolutely cool. I just solve one and upsolve 1 out of 7 xD
