@@ -1,6 +1,8 @@
 # 『baby_foren』
 > buka bang
 
+<img width="489" height="396" alt="image" src="https://github.com/user-attachments/assets/d02d6b7d-30ee-46da-8420-735c2febd308" />
+
 Author: hyall
 
 # 『The challenge』
