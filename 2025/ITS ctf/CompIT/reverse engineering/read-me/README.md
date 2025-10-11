@@ -1,4 +1,4 @@
-# 『execute-me』
+# 『read-me』
 > just read it bro
 
 Author: requiiem
