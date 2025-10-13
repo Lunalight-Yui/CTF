@@ -1,10 +1,10 @@
-All solving CTF on TCP1P. My team: Yauda ga suah. 
+All solving CTF on TCP1P. My team: `Yauda ga suah`. 
 
 My team member:
 - [RɅV☰N](https://github.com/Zee031?tab=repositories)
 - [Grb](https://github.com/GetRektBoy724)
 
-  List challenge i solve (click the challenge and you will redirect to solver):
+This is all the list ctf that we join TCP1P version:
 
   | Challenge | Category | Difficulty | Link |
   | :------- | :------: | :-------: | :-------: |
