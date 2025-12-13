@@ -6,10 +6,7 @@
 
 This challenge is blind. Here are the source code:
 
-- [index.html]()
-- [book?id=2]()
-- [book?id=3]()
-- [book?id=4]()
+- [index.html](https://github.com/Lunalight-Yui/CTF/blob/main/2025/Nexhunt/Dz-Kitab/source/code/index.html)
 
 I got this source code using `inspect`
 
