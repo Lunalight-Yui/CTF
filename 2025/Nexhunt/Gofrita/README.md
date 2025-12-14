@@ -5,7 +5,7 @@
 # 『Challenge Overview』
 
 This is blind, but not very blind. Here is source code from inspect:
-- [index.html]()
+- [index.html](https://github.com/Lunalight-Yui/CTF/blob/main/2025/Nexhunt/Gofrita/source/code/index.html)
 
 # 『Solving Challenge』
 > Solved by Kokon then Lyra
