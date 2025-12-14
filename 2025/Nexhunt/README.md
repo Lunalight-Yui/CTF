@@ -8,3 +8,4 @@ i solve:
  | :------- | :------: | :------: | :------: | :------: |
  | Web Exploit | Dz-Kitab | Http Parameter Pollution or Html Smuggle | [Click me](https://github.com/Lunalight-Yui/CTF/tree/main/2025/Nexhunt/Dz-Kitab) | [HTTP Parameter Pollution](https://portswigger.net/web-security/api-testing/server-side-parameter-pollution), [HTML request Smuggle](https://portswigger.net/web-security/request-smuggling)
  | Web Exploit | Web Daveloper | Basic Web Daveloper exploit | [Click me](https://github.com/Lunalight-Yui/CTF/tree/main/2025/Nexhunt/Web%20Daveloper) | [WebDev](https://datatracker.ietf.org/doc/html/rfc4918) and [http header](https://beeceptor.com/docs/concepts/http-headers/)
+| Web Exploit | Gofrita | Gopher SSRF method | [Click me](https://github.com/Lunalight-Yui/CTF/tree/main/2025/Nexhunt/Gofrita) | The reference on the writeup |
