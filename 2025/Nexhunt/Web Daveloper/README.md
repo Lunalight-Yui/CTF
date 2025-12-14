@@ -44,7 +44,7 @@ You might think, well just delete `X-HTTP-Method-Override` command and you will 
 
 <img width="1142" height="325" alt="image" src="https://github.com/user-attachments/assets/d3134765-bf80-4504-a385-c38dae90fc9c" />
 
-So yeah, use another tricks: `X-Original-URL: /vault/flag.txt` and you we]ill get flag:
+So yeah, use another tricks: `X-Original-URL: /vault/flag.txt` and you will get flag:
 
 <img width="1137" height="335" alt="image" src="https://github.com/user-attachments/assets/d1ea8c53-ddee-4baf-8795-27c0dbd75ffd" />
 
