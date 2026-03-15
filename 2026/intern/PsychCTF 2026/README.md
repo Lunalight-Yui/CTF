@@ -6,3 +6,5 @@
   | Beginner | Lylera_ | 1 out of n |
 
   I play with my friends `until then` and part of the members from it.
+
+  note: i already solve misc, but forgot which 2 of them. :<
