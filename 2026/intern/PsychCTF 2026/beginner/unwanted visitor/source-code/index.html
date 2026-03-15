@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700&display=swap');
+
+    :root {
+      --green: #00ff9d;
+      --dim-green: #00994d;
+      --bg: #050a05;
+      --card: #0a120a;
+      --border: #0d2b0d;
+      --glow: 0 0 8px #00ff9d55, 0 0 20px #00ff9d22;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--green);
+      font-family: 'Share Tech Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Scanlines overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 3px,
+        rgba(0, 0, 0, 0.18) 3px,
+        rgba(0, 0, 0, 0.18) 4px
+      );
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Vignette */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.75) 100%);
+      pointer-events: none;
+      z-index: 9;
+    }
+
+    /* Grid background */
+    .grid-bg {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,255,100,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,100,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+    }
+
+    .terminal {
+      position: relative;
+      z-index: 5;
+      width: min(680px, 94vw);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      box-shadow: 0 0 0 1px #00ff9d11, 0 0 40px #00ff9d18, inset 0 0 60px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .terminal-bar {
+      background: #0c180c;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+    }
+    .dot.red    { background: #ff5f57; box-shadow: 0 0 6px #ff5f5788; }
+    .dot.yellow { background: #febc2e; box-shadow: 0 0 6px #febc2e88; }
+    .dot.green  { background: #28c840; box-shadow: 0 0 6px #28c84088; }
+
+    .bar-title {
+      flex: 1;
+      text-align: center;
+      font-size: 11px;
+      color: #3a6e3a;
+      letter-spacing: 2px;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    .terminal-body {
+      padding: 32px 36px 36px;
+    }
+
+    .prompt-line {
+      font-size: 13px;
+      color: #3a6e3a;
+      margin-bottom: 6px;
+      opacity: 0;
+      animation: fadein 0.4s ease forwards;
+    }
+    .prompt-line span { color: var(--dim-green); }
+
+    h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 700;
+      color: var(--green);
+      text-shadow: var(--glow);
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      opacity: 0;
+      animation: fadein 0.5s ease 0.3s forwards;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 18px 0;
+      opacity: 0;
+      animation: fadein 0.4s ease 0.5s forwards;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #4eb870;
+      opacity: 0;
+      animation: fadein 0.5s ease 0.7s forwards;
+    }
+
+    .status {
+      margin-top: 24px;
+      padding: 14px 16px;
+      background: rgba(0,255,100,0.04);
+      border: 1px solid #0d2b0d;
+      border-left: 3px solid var(--dim-green);
+      font-size: 12px;
+      color: #3a6e3a;
+      opacity: 0;
+      animation: fadein 0.5s ease 1s forwards;
+    }
+
+    .status .tag { color: var(--green); }
+
+    .blink {
+      display: inline-block;
+      width: 9px; height: 15px;
+      background: var(--green);
+      vertical-align: middle;
+      margin-left: 4px;
+      animation: blink 1s step-end infinite;
+      box-shadow: var(--glow);
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hint {
+      margin-top: 28px;
+      font-size: 11px;
+      color: #1e401e;
+      opacity: 0;
+      animation: fadein 0.5s ease 1.4s forwards;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <div class="terminal">
+    <div class="terminal-bar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+      <div class="bar-title">index.html — HTTP/1.1 200 OK</div>
+    </div>
+    <div class="terminal-body">
+      <div class="prompt-line">
+        <span>visitor@web:~$</span> curl -s http://target.local/
+      </div>
+      <h1>Nothing to see here 👀</h1>
+      <hr class="divider"/>
+      <p>This website is under construction.<span class="blink"></span></p>
+
+      <div class="status">
+        <span class="tag">[SYS]</span> Server: nginx/1.24.0 &nbsp;|&nbsp;
+        <span class="tag">[SYS]</span> X-Powered-By: PHP/8.2 &nbsp;|&nbsp;
+        <span class="tag">[OK]</span> Status: 200
+      </div>
+
+      <div class="hint">// try common recon paths — every site leaves breadcrumbs</div>
+    </div>
+  </div>
+</body>
+</html>
