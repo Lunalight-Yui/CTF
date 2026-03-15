@@ -1,6 +1,6 @@
 # Here are list my solver for this challs:
 
-  | Category | Solver | How many solving problem | Link: |
+  | Category | Solver | How many solving problem |
   | :------- | :------: | :------: | :------: |
   | Web Exploitation | Lylera_ | 1 out of 4 | 
   | Misc | Lylera_ | 2 out of n |
