@@ -2,7 +2,7 @@
 
   | Category | Solver | How many solving problem |
   | :------- | :------: | :------: |  
-  | Web Exploitation | Lylera_ | 1 out of 4  
+  | Web Exploitation | Lylera_ | 2 out of 4  
   | Misc | Lylera_ | 2 out of n 
   | Beginner | Lylera_ | 2 out of n 
 
