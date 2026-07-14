@@ -1,0 +1,138 @@
+<!-- I take this one from inspect -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Forbidden Archives</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --parchment: #f4e4bc;
+            --ink: #2c1e12;
+            --aged-brown: #3d2b1f;
+        }
+
+        body { 
+            background-color: var(--aged-brown);
+            background-image: radial-gradient(circle, #5c4033 1px, transparent 1px);
+            background-size: 30px 30px;
+            color: var(--parchment); 
+            font-family: 'Georgia', serif; 
+            margin: 0;
+            padding: 50px;
+            overflow-x: hidden;
+        }
+
+        /* Magical Glitter Animation */
+        .glitter-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            background-image: 
+                radial-gradient(circle, white 1px, transparent 1px),
+                radial-gradient(circle, var(--gold) 1.5px, transparent 1px);
+            background-size: 100px 100px, 200px 200px;
+            animation: glitter 12s linear infinite;
+            opacity: 0.2;
+            z-index: 999;
+        }
+
+        @keyframes glitter {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-1000px); }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(44, 30, 18, 0.95);
+            padding: 40px;
+            border: 4px double var(--gold);
+            box-shadow: 0 0 30px rgba(0,0,0,0.7);
+            position: relative;
+            text-align: center;
+        }
+
+        h1 { 
+            font-variant: small-caps; 
+            color: var(--gold); 
+            text-shadow: 2px 2px 4px #000;
+            font-size: 3.5em;
+            margin: 0 0 10px 0;
+        }
+
+        .search-area { margin: 30px 0; }
+
+        input[type="text"] { 
+            background: var(--parchment); 
+            border: 2px solid var(--gold); 
+            color: var(--ink); 
+            padding: 12px; 
+            width: 65%; 
+            font-style: italic;
+            outline: none;
+        }
+
+        button { 
+            background: var(--gold); 
+            color: var(--ink); 
+            border: 1px solid var(--ink); 
+            padding: 12px 25px; 
+            font-weight: bold; 
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #fff;
+            box-shadow: 0 0 15px var(--gold);
+        }
+
+        .book-card { 
+            background: var(--parchment); 
+            color: var(--ink);
+            border-left: 12px solid var(--gold);
+            padding: 25px; 
+            margin-top: 25px; 
+            text-align: left;
+            box-shadow: 8px 8px 20px rgba(0,0,0,0.4);
+            transform: rotate(-0.5deg); /* Slight vintage mis-alignment */
+        }
+
+        .book-card h3 { margin: 0 0 10px 0; color: #5c4033; border-bottom: 1px solid var(--gold); }
+        
+        .error-scroll {
+            color: #ff6b6b;
+            background: #1a0000;
+            border: 1px dashed #ff6b6b;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="glitter-overlay"></div>
+    
+    <div class="container">
+        <h1>The Forbidden Archives</h1>
+        <p><i>"Every scroll tells a story, every silence hides a truth."</i></p>
+        
+        <div class="search-area">
+            <form method="GET" action="/">
+                <input type="text" name="search" placeholder="Whisper a title..." value="">
+                <button type="submit">Seek</button>
+            </form>
+        </div>
+
+        
+
+        <div class="results">
+            
+                
+            
+        </div>
+    </div>
+</body>
+</html>

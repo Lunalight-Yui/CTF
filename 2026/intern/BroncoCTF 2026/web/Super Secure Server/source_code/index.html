@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+  <div class="login">
+    <h1>Login</h1>
+    <div class="links">
+      <a href="/login" class="active">Login</a>
+    </div>
+    <form id="loginForm">
+      <label for="username">
+        <i class="fas fa-user"></i>
+      </label>
+      <input type="text" name="username" placeholder="Username" id="username" required>
+      <label for="password">
+        <i class="fas fa-lock"></i>
+      </label>
+      <input type="password" name="password" placeholder="Password" id="password" required>
+      <div>
+        <br />
+        <div class="msg" id="messageBox"></div>
+      </div>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+	<script>
+			let leakedUser = "";
+			let leakedPass = "";
+
+			fetch('/api/config')
+				.then(res => res.json())
+				.then(data => {
+					leakedUser = data.username; 
+					leakedPass = data.password;
+				});
+
+			document.getElementById('loginForm').addEventListener('submit', function(e) {
+				e.preventDefault();
+
+				const u = document.getElementById('username').value;
+				const p = document.getElementById('password').value;
+				const msgBox = document.getElementById('messageBox');
+
+				// client-side password comparison
+				if (u === leakedUser && p === leakedPass) {
+					fetch('/login', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ authenticated: true })
+					})
+					.then(res => res.json())
+					.then(data => {
+						if (data.success) {
+							window.location.href = data.redirect;
+						}
+					});
+				} else {
+					msgBox.innerText = "Incorrect username or password!";
+				}
+			});
+	</script>
+</body>
+
+</html>
