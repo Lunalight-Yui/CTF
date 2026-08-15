@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /security
+
+# amVmZixzYXJhaCx hZG1pbixndWVzdA==
