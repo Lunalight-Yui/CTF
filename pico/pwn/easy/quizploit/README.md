@@ -1,6 +1,6 @@
 # 『Quizploit』
 
-- ![chall](./assets/challs.png)
+![chall](./assets/challs.png)
 
 # 『The challenge』
 
