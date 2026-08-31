@@ -1,6 +1,6 @@
 All solving CTF on MetaCTF. My team: `UCS`. 
 
-  List challenge that i solve it about:
+ List challenge that i solve it about:
 
   | Category | Solver | How many solving problem | Link: |
   | :------- | :------: | :------: | :------: |
