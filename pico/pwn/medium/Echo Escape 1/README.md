@@ -8,7 +8,7 @@ This challenge looks interesting and the security of this file is:
 
 ![chall](./assets/file.png)
 
-# 『Highlight vulnerability and parts of interesting』
+## 『Highlight vulnerability and parts of interesting』
 
 source code:
 
@@ -58,7 +58,7 @@ This is buffer overflow and call win function to get flag. Very simple actually.
 
 After all source i gave, you might understood just a little so here is explanation from me. So basically there is 2 function, main and win program. You can do whatever at main and type anything you like with the maximum space: 32 byte (that you can overflow it). And then you can't get win function. But how we can call win function tho? if you take a look on the `checksec --file=vuln` (this is the command to check the security of the files tho), there is no pie meaning that we can get static memory address tho and we can jump on it.
 
-# 『Solving Challenge』
+## 『Solving Challenge』
 > solve by Lylera
 
 So after knowing this one, you can make script for these one (but mainly this solve using script tho) so here is the script:
@@ -67,13 +67,13 @@ So after knowing this one, you can make script for these one (but mainly this so
 
 You can read by yourself and understand it. Also i make 2 option, either you can make automatic search or just manual one. Two of these are fine as long you understand what it do.
 
-# 『Flag』
+### 『Flag』
 
 the result:
 
 ![image](./assets/flag.png)
 
-# 『other』
+### 『other』
 
 - [chall](./source/)
 - [solver.py](./source/solver.py)

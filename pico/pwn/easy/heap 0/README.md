@@ -6,7 +6,7 @@
 
 another challenge i solve, so lets try to understand what is this
 
-# 『Highlight vulnerability and parts of interesting』
+## 『Highlight vulnerability and parts of interesting』
 
 here is part of the source code c
 
@@ -145,7 +145,7 @@ So this is buffer overflow on heap. It overflow the allocation chunk of the memo
 
 ![image](./assets/file.png)
 
-# 『Solving Challenge』
+## 『Solving Challenge』
 > solve by Lylera
 
 After know this technique, time to solve at local first. So i open my pwndbg and try to understand based on the code:
@@ -181,7 +181,7 @@ then try to check if the overwrite and print flag after confirm it
 
 ![image](./assets/local.png)
 
-# 『Flag』
+### 『Flag』
 
 You can try to solve it using manual or script.
 
@@ -195,7 +195,7 @@ script:
 
 ![image](./assets/flag-script.png)
 
-# 『other』
+### 『other』
 
 - [chall](./source/)
 - [solver.py](./source/solver.py)

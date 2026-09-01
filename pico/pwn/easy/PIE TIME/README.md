@@ -6,7 +6,7 @@
 
 Second challenge easy i solve (to speedrun). About Pie, lets solve
 
-# 『Highlight vulnerability and parts of interesting』
+## 『Highlight vulnerability and parts of interesting』
 
 here is part of the source code c
 
@@ -66,7 +66,7 @@ This asking of the memory to jump it. But there is a pie, so you must get the of
 
 ![image](./assets/file.png)
 
-# 『Solving Challenge』
+## 『Solving Challenge』
 > solve by Lylera
 
 [answer](./assets)
@@ -95,7 +95,7 @@ and if you try to calculate it, you can do like this:
 pwndbg> p/x 0x133d - 0x12a7
 $1 = 0x96
 ```
-# 『Flag』
+### 『Flag』
 
 the result is 0x96. and of course three digit last number is static, so you can do exact this one (except... the file that has been given to us and the remote is different :> ). So you can do 2 solve, manual or script.
 
@@ -111,7 +111,7 @@ script:
 
 But i would rather recommend try to learn the code cuz you'll never know in future where you play ctf and remote are different so so yeah
 
-# 『other』
+### 『other』
 
 - [chall](./source/)
 - [solver.py](./source/solver.py)
